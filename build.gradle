@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.pk11.rxnetty'
+
+version = '0.1'
+
+description = 'http router for rxnetty'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+ jcenter()
+}
+
+dependencies {
+    compile 'com.netflix.rxnetty:rx-netty:0.3.18'
+    compile 'tv.cntt:jauter:1.7'
+    testCompile 'junit:junit-dep:4.10'	
+}
